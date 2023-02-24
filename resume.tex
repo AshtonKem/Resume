@@ -1,0 +1,210 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Ashton} % Your first name
+\familyname{Kemerling} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+% \title{Curriculum Vitae}
+% \address{Boise, ID 83713}{
+\phone{(312) 582 0313} 
+\email{ashtonkemerling@protonmail.com} 
+\homepage{ashtonkemerling.com}{ashtonkemerling.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example 
+% \extrainfo{additional information}
+\photo[70pt][0.4pt]{pictures/Ashton} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+% \quote{"A witty and playful quotation" - John Smith} 
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% % To remove the cover letter, comment out this entire block
+
+% \clearpage
+
+% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+% \date{\today} % Letter date
+% \opening{Dear Sir or Madam,} % Opening greeting
+% \closing{Sincerely yours,} % Closing phrase
+% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+% \makelettertitle % Print letter title
+
+% \lipsum[1-2] % Dummy text
+% \lipsum[4] % Dummy text
+
+% \makeletterclosing % Print letter signature
+
+% \newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{Education}
+
+% \cventry{2008--2012}{Bachelor of Science}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}  % Arguments not required can be left empty
+% \cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
+
+% \section{Masters Thesis}
+
+% \cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
+% \cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
+% \cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+% \subsection{Management}
+
+\cventry{2020--Present}{Engineering Manager}{\textsc{Disney (Acquired Hulu)}}{Remote}{}{Managing the State Authority team, responsible for all user content preferences and playback state. This is a team of eight engineers and a TPM, responsible for a few dozen very high scale Java applications critical to the DVR, ``My Stuff'', and the Disney+ watchlist.
+    \newline{}\newline{}
+    Detailed achievements:
+    \begin{itemize}
+        \item Engineering lead for a company wide initiative to introduce unlimited DVR to Hulu. Worked with existing design, front end, and middle layer teams to ensure backwards compatibliity, as well as design new caching layers to handle increases in backend RPS.
+        \item Grew the team by 40\%.
+        \item Oversaw team's migration from in-house systems to AWS native technologies.
+        \item Helping coordinate the continued merger of Disney and Hulu services.
+        \item Leading an initiative to create a facade for similar Disney \& Hulu data to expedite the unification of front end systems.
+        \item Designed a group wide ``cold start'' system to enable teams to provide easy offline access to large mutable data sets for both analytics and data migration.
+    \end{itemize}}
+
+\vspace{0.1in}
+
+
+\cventry{2020}{Engineering Manager}{\textsc{Hulu (Acquired by Disney)}}{Los Angeles/Remote}{}{Took over the ``DVR'' team, which was eventually renamed User Settings \& Artifacts. Responsible for the DVR, ``My Stuff'', and Offline Downloads.
+    \newline{}\newline{}
+    Detailed achievements:
+    \begin{itemize}
+        \item Led team through an unexpected transition to remote work.
+        \item Maintained lowest attrition rate in the department during 2020.
+        \item Transitioned the DVR team from a feature specific team to a cross-feature platform team.
+        \item Created sub-team to drive technical standards across teams, simplify technical stacks, and support an ahead of schedule migration to Kubernetes.
+        \item Led a ``swarm'' of multiple teams to drastically reduce the DVR operating costs, cutting costs by 75\% without loss in functionality or performance.
+        \item Led the DVR team to the first incident free Super Bowl in Hulu DVR history.
+    \end{itemize}}
+
+\vspace{0.1in}
+
+\cventry{2017--2019}{Engineering Manager}{\textsc{Edmunds.com}}{Los Angeles}{}{Responsible for the ``Lead Systems'' team, which owns all systems necessary to generate sales leads for client dealerships. Critical to roughly 30\% of Edmunds' revenue.
+\newline
+    \begin{itemize}
+        \item Planned and led the migration of multiple lead forms across the Edmunds website to a single, consistent, and easy to maintain React based form.
+        \item Designed and released a number of internal tools to improve lead form iteration speed.
+        \item Created tools for product to introspect lead form behavior without engineering support, nearly eliminating internal support requests.
+        \item Designed a system for protecting customer data in close collaboration with Data Analytics.
+        \item Worked closely with Business Development to capitalize on limited time business opportunities.
+        \item Only non-executive engineering representative on the hiring and titling committee. Picked new engineering interview tool, designed the interview loop, and rewrote all engineering titles and job descriptions.
+    \end{itemize}}
+
+\vspace{0.1in}
+
+%------------------------------------------------
+
+
+\subsection{Engineering}
+
+\cventry{2015-2017}{Senior Software Engineer}{\textsc{DRW Trading}}{Chicago}{}{One of a small team responsible for maintaining a key middle layer in all DRW trading operations. The applications we ran both maintained a record of every financial instrument the company traded across multiple exchanges, and the trades and positions for each individual trading desk. Also provided key support to back office operations critical for compliance and risk management.
+    \newline{}
+    \begin{itemize}
+        \item Maintained trade critical systems in Ruby, Java, Clojure, C\#, and Javascript.
+        \item Worked on a small team that both maintained the company's trade \& position store, as well as the trading instrument reference application.
+        \item Did a complete rewrite of the script that imported financial futures into the company reference store for better performance and reliability.
+        \item Wrote an application to assist the back office with bond calculations, producing results more accurate than what Bloomberg could provide.
+        \item Helped maintain system uptime even during the record breaking trading days of Brexit and the 2016 election.
+        \item Wrote multiple services to to automated end of day back end processes, saving dozens of hours of labor per week.
+        \item Expanded and improved open source and internal devops tools.
+        \item Administered over 100 internal servers and VMs.
+        \item Maintained and improved existing Excel add-ons, written in C\#.
+    \end{itemize}}
+
+\vspace{0.1in}
+
+\cventry{2013-2015}{Software Engineer}{\textsc{Pivotal Labs}}{Denver}{}{Helped maintain and grow one of Pivotal's only B2C offerings, Pivotal Tracker. I worked on both the back end and the front end of this application as we both expanded functionality and completely rewrote the user experience to the ``Next'' user experience.
+    \newline
+    \begin{itemize}
+        \item Used generative testing to find reliable reproduction steps for both long running bugs, and new bug reports. This tool and technique were turned into a conference talk at the Clojure Conj in 2014.
+        \item Diagnosed and resolved a memory leak in Chrome, reducing memory usage by an order of magnitude.
+        \item Finished years long migration from Rails 2 to Rails 3, including porting documentation critical rspec monkey patches.
+        \item Completed complete rewrite of the SPA front end, closing out a years long fork of the front end with a carefully reconstructed git history.
+    \end{itemize}}
+
+\vspace{0.1in}
+
+\cventry{2012-2013}{Software Engineer}{\textsc{Narrative Science}}{Chicago}{}{
+    \begin{itemize}
+        \item Sole engineer for company's only client facing product, Quill for Google Analytics.
+        \item Maintained critical ELT pipelines for customer reports.
+        \item Rewrote one-off data processing scripts into a predictable and reusable format.
+        \item Led company wide effort to migrate to immutable infrastructure.
+        \item Reworked CI/CD infrastructure for faster builds at a lower cost.
+    \end{itemize}}
+\vspace{0.1in}
+
+
+% \cventry{2011-2012}{Software Engineer}{\textsc{OnShore Development}}{Chicago}{}{
+%     \begin{itemize}
+%         \item Maintained key web application written in Lisp
+%         \item Helped rewrite core algorithms to reduce processing time from minutes to seconds
+%         \item Replaced custom Perl deployment scripts with Chef for more reliable deployment
+%         \item Created i8n library to translate the application for international customers
+%     \end{itemize}}
+
+%----------------------------------------------------------------------------------------
+% \section{Education}
+
+% \cventry{2008--2012}{Bachelor of Science, Computer Science}{Loyola University Chicago}{}{}{}
+% \cventry{2008--2012}{Bachelor of Science, Mathematics}{Loyola University Chicago}{}{}{}
+
+\end{document}
