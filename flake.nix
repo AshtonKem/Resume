@@ -15,7 +15,7 @@
       };
     in rec {
       packages = {
-        document = pkgs.stdenvNoCC.mkDerivation rec {
+        default = pkgs.stdenvNoCC.mkDerivation rec {
           name = "resume";
           src = self;
           buildInputs = [ pkgs.coreutils tex ];
@@ -33,6 +33,5 @@
           '';
         };
       };
-      defaultPackage = packages.document;
     });
 }
