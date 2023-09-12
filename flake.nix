@@ -7,7 +7,7 @@
   outputs = { self, nixpkgs, flake-utils }:
     with flake-utils.lib; eachSystem allSystems (system:
     let
-      pkgs = nixpkgs.legacyPackages.${system};
+      pkgs = import nixpkgs {inherit system;};
       tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-tetex latex-bin latexmk etoolbox
             xcolor url fancyhdr tools xargs xkeyval microtype bigfoot lipsum
