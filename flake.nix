@@ -14,6 +14,9 @@
             geometry hyperref pdftexcmds infwarerr kvoptions epstopdf;
       };
     in rec {
+      devShell = pkgs.mkShell {
+        buildInputs = [ tex pkgs.watchexec ];
+      };
       packages = {
         default = pkgs.stdenvNoCC.mkDerivation rec {
           name = "resume";
