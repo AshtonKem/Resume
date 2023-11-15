@@ -10,8 +10,9 @@
       pkgs = import nixpkgs {inherit system;};
       tex = pkgs.texlive.combine {
           inherit (pkgs.texlive) scheme-tetex latex-bin latexmk etoolbox
-            xcolor url fancyhdr tools xargs xkeyval microtype bigfoot lipsum
-            geometry hyperref pdftexcmds infwarerr kvoptions epstopdf;
+            xcolor url fancyhdr tools xargs xkeyval microtype bigfoot lipsum fontspec
+            geometry hyperref pdftexcmds infwarerr kvoptions epstopdf textpos isodate
+            substr titlesec;
       };
     in rec {
       devShell = pkgs.mkShell {
@@ -21,7 +22,7 @@
         default = pkgs.stdenvNoCC.mkDerivation rec {
           name = "resume";
           src = self;
-          buildInputs = [ pkgs.coreutils tex ];
+          buildInputs = [ pkgs.coreutils pkgs.lato tex ];
           phases = ["unpackPhase" "buildPhase" "installPhase"];
           buildPhase = ''
             export PATH="${pkgs.lib.makeBinPath buildInputs}";

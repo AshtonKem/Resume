@@ -1,243 +1,234 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-% "ModernCV" CV and Cover Letter
-% LaTeX Template
-% Version 1.3 (29/10/16)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
 %
 % Original author:
-% Xavier Danaux (xdanaux@gmail.com) with modifications by:
-% Vel (vel@latextemplates.com)
+% Debarghya Das (http://debarghyadas.com)
 %
-% License:
-% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
 %
-% Important note:
-% This template requires the moderncv.cls and .sty files to be in the same 
-% directory as this .tex file. These files provide the resume style and themes 
-% used for structuring the document.
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+\documentclass[]{deedy-resume-openfont}
 
-\documentclass[11pt,letterpaper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
-
-\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{grey} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-
-\usepackage[scale=0.75]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
-
-%----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
-%----------------------------------------------------------------------------------------
-
-\firstname{Ashton} % Your first name
-\familyname{Kemerling} % Your last name
-
-% All information in this block is optional, comment out any lines you don't need
-% \title{Curriculum Vitae}
-% \address{Boise, ID 83713}{
-\phone{(312) 582 0313} 
-\email{ashton.kemerling@protonmail.com}
-\homepage{ashtonkemerling.com}{www.ashtonkemerling.com} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-% \extrainfo{additional information}
-\photo[70pt][0.4pt]{pictures/Ashton} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-% \quote{"A witty and playful quotation" - John Smith} 
-
-%----------------------------------------------------------------------------------------
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
 
-% % To remove the cover letter, comment out this entire block
-
-% \clearpage
-
-% \recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
-% \date{\today} % Letter date
-% \opening{Dear Sir or Madam,} % Opening greeting
-% \closing{Sincerely yours,} % Closing phrase
-% \enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
-
-% \makelettertitle % Print letter title
-
-% \lipsum[1-2] % Dummy text
-% \lipsum[4] % Dummy text
-
-% \makeletterclosing % Print letter signature
-
-% \newpage
-
-%----------------------------------------------------------------------------------------
-%	CURRICULUM VITAE
-%----------------------------------------------------------------------------------------
-
-\makecvtitle % Print the CV title
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{Education}
-
-% \cventry{2008--2012}{Bachelor of Science}{The University of California}{Berkeley}{\textit{GPA -- 8.0}}{First Class Honours}  % Arguments not required can be left empty
-% \cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
-
-% \section{Masters Thesis}
-
-% \cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
-% \cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
-% \cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
-
-%----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Experience}
-
-% \subsection{Management}
-
-\cventry{2020--Present}{Engineering Manager}{\textsc{Hulu, Disney
-    (Merger)}}{Remote}{}{
-  Managed multiple teams responsible for the Hulu DVR, user bookmarks,
-  pause/resume position, progress bars, and the Continue Watching functionality
-  on the home page. These teams are critical to the ongoing unification of
-  Disney+ and Hulu, and support both legacy apps as well as the new, unified
-  application currently under development.
-    \newline{}\newline{}
-    Detailed achievements:
-    \begin{itemize}
-      \item Successfully replaced legacy Disney+ pause/resume system, saving \$36m per year.
-      \item First team to launch a production service on the new, unified Disney Streaming stack.
-      \item Coordinating QA of all department services for upcoming unified system launch.
-      \item Driving creation of cross-service feature specific status dashboards.
-      \item Successfully delivered multiple client facing features for unified stack ahead of schedule.
-      \item Increased headcount by 40\%, allowing the team to split and specialize.
-      \item Successfully trained two individual contributors to become managers.
-      \item Led successful, multi-team project to introduce an unlimited DVR to Hulu.
-      \item Replaced multiple single purpose applications with a single app for all user content preferences.
-      \item Migrated all applications from on-premise to cloud native alternatives ahead of schedule.
-      \item First team to migrate all monitoring configuration to IaaS.
-      \item Led multiple zero downtime online migration of user systems without data loss.
-      \item Cut DVR cost by 75\% without loss of performance or feature set.
-      \item First incident free Super Bowl for the DVR in Hulu history.
-      \item Led team through an unexpected transition to remote work.
-      \item Maintained lowest attrition rate in the department.
-      \item Repeatedly established cross-feature mandates for teams, providing them more stability and product access.
-      \item Oversaw creation of cross-team best-practices committee with a goal in reducing duplicated efforts.
-    \end{itemize}}
-
-\vspace{0.1in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\cventry{2017--2019}{Engineering Manager}{\textsc{Edmunds.com}}{Los Angeles}{}{
-  Responsible for the ``Lead Systems'' team. This team managed the entire stack for collecting customer leads and delivering them to both dealerships and OEMs from the form to final delivery. This system was critical to about 30\% of Edmunds total revenue.
+\namesection{Ashton}{Kemerling}{ \urlstyle{same}\url{https://ashtonkemerling.com} \\
+\href{mailto:ashton.kemerling@protonmail.com}{ashton.kemerling@protonmail.com} | 312.582.0313
+}
+
+\href{https://www.linkedin.com/in/ashton-kemerling/}{https://www.linkedin.com/in/ashton-kemerling/}
+
+\begin{center}
+\end{center}
+
+\section{Experience - Management}
+
+\runsubsection{Hulu/Disney}
+\descript{| Engineering Manager }
+\location{2020 - Current | Remote}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+I've managed two teams at Disney. Both were responsible for high-visibility client facing features such as pause/resume, the DVR, and Continue Watching among others. Current projects include the simulcast for Dancing with the Stars and the ongoing unification of all legacy Disney Streaming Services technical stacks.
+\vspace{\topsep}
 \newline
-    \begin{itemize}
-        \item Planned and led the migration of dozen lead forms to a single one based on React.
-        \item Designed and released a number of internal tools to improve lead form iteration speed.
-        \item Created a series of self service tools, eliminating support requests from product.
-        \item Designed a system for protecting customer data in close collaboration with Data Analytics.
-        \item Worked closely with Business Development to capitalize on limited time business opportunities.
-        \item Only non-executive engineering representative on the hiring committee.
-        \item Redesigned and unified the hiring process for all backend engineers.
-        \item Created a new title scheme for all engineers to provide clearer expectations and growth paths.
-    \end{itemize}}
+Key Deliverables
+\begin{tightemize}
+\item Successfully replaced legacy Disney+ pause/resume system, saving \$36m per year.
+\item Cut DVR cost by 75\% without loss of performance or feature set.
+\item Delivered multiple client facing features for unified stack ahead of schedule.
+\item First team to launch a production service on the new, unified Disney Streaming stack.
+\item Led successful, multi-team project to introduce an unlimited DVR to Hulu.
+\item Replaced multiple single purpose applications with a single app for all user content preferences.
+\item Led multiple zero downtime online migration of user systems without data loss.
+\item First incident free Super Bowl for the DVR in Hulu history.
+\end{tightemize}
 
-\vspace{0.1in}
+\sectionsep
+People Management
+\begin{tightemize}
+\item Increased headcount by 40\%, allowing the team to split and specialize.
+\item Successfully trained two individual contributors to become managers.
+\item Led team through an unexpected transition to remote work.
+\item Maintained lowest attrition rate in the department.
+\end{tightemize}
+\sectionsep
+Cross Team Impact
+\begin{tightemize}
+\item Coordinating QA of all department services for upcoming unified system launch.
+\item Driving creation of cross-service feature specific status dashboards.
+\item Migrated all applications from on-premise to cloud native alternatives ahead of schedule.
+\item First team to migrate all monitoring configuration to IaaS.
+\item Repeatedly established cross-feature mandates for teams, providing them more stability and product access.
+\item Oversaw creation of cross-team best-practices committee with a goal in reducing duplicated efforts.
+\end{tightemize}
+\sectionsep
 
-%------------------------------------------------
+\runsubsection{Edmunds.com}
+\descript{| Engineering Manager }
+\location{2017 - 2019 | Santa Monica, CA}
+\vspace{\topsep}
+Responsible for the ``Lead Systems'' team. This team managed the entire stack for collecting customer leads and delivering them to both dealerships and OEMs from the form to final delivery. This system was critical to about 30\% of Edmunds total revenue.
+\vspace{\topsep}
+Key Deliverables
+\begin{tightemize}
+\item Planned and led the migration of dozen lead forms to a single one based on React.
+\item Designed and released a number of internal tools to improve lead form iteration speed.
+\item Created a series of self service tools, eliminating support requests from product.
+\item Designed a system for protecting customer data in close collaboration with Data Analytics.
+\item Worked closely with Business Development to capitalize on limited time business opportunities.
+\end{tightemize}
 
+\sectionsep
+People Management
+\begin{tightemize}
+  \item Redesigned and unified the hiring process for all backend engineers.
+  \item Only non-executive engineering representative on the hiring committee.
+  \item Created a new title scheme for all engineers to provide clearer expectations and growth paths.
+\end{tightemize}
 
-\subsection{Engineering}
+\pagebreak
 
-\cventry{2015-2017}{Senior Software Engineer}{\textsc{DRW
-    Trading}}{Chicago}{}{One of a small team responsible for maintaining a key
-  middle layer in all DRW trading operations. The applications we ran both
-  maintained a record of every financial instrument the company traded across
-  multiple exchanges, and the trades and positions for each individual trading
-  desk. Also provided key support to back office operations critical for
-  compliance and risk management.
-    \newline{}
-    \begin{itemize}
-        \item Maintained trade critical systems in Ruby, Java, Clojure, C\#, and
-          Javascript.
-        \item Worked on a small team that both maintained the company's trade \&
-          position store, as well as the trading instrument reference
-          application.
-        \item Did a complete rewrite of the script that imported financial
-          futures into the company reference store for better performance and
-          reliability.
-        \item Wrote an application to assist the back office with bond
-          calculations, producing results more accurate than what Bloomberg
-          could provide.
-        \item Helped maintain system uptime even during the record breaking
-          trading days of Brexit and the 2016 election.
-        \item Wrote multiple services to to automated end of day back end
-          processes, saving dozens of hours of labor per week.
-        \item Expanded and improved open source and internal devops tools.
-        \item Administered over 100 internal servers and VMs.
-        \item Maintained and improved existing Excel add-ons, written in C\#.
-    \end{itemize}}
+\section{Experience - Engineering}
 
-\vspace{0.1in}
+\runsubsection{DRW Trading}
+\descript{| Senior Software Engineer}
+\location{2015 - 2017 | Chicago, IL}
+\vspace{\topsep}
+One of a small team responsible for maintaining a key middle layer in all DRW trading operations. The applications we ran both maintained a record of every financial instrument the company traded across multiple exchanges, and the trades and positions for each individual trading desk. Also provided key support to back office operations critical for compliance and risk management.
+\vspace{\topsep}
+\begin{tightemize}
+\item Worked on a small team that both maintained the company's trade \& position store, as well as the trading instrument reference application.
+\item Did a complete rewrite of the script that imported financial futures into the company reference store for better performance and reliability.
+\item Wrote an application to assist the back office with bond calculations, producing results more accurate than what Bloomberg could provide.
+\item Helped maintain system uptime even during the record breaking trading days of Brexit and the 2016 election.
+\item Wrote multiple services to automated end of day back end processes, saving dozens of hours of labor per week.
+\item Expanded and improved open source and internal devops tools.
+\item Administered over 100 internal servers and VMs.
+\item Maintained and improved existing Excel add-ons, written in C\#.
+\item Maintained trade critical systems in Ruby, Java, Clojure, C\#, and Javascript.
+\end{tightemize}
+\sectionsep
 
-\cventry{2013-2015}{Software Engineer}{\textsc{Pivotal Labs}}{Denver}{}{Helped
-  maintain and grow one of Pivotal's only B2C offerings, Pivotal Tracker. I
-  worked on both the back end and the front end of this application as we both
-  expanded functionality and completely rewrote the user experience to the
-  ``Next'' user experience.
-    \newline
-    \begin{itemize}
-        \item Used generative testing to find reliable reproduction steps for
-          both long running bugs, and new bug reports. This tool and technique
-          were turned into a conference talk at the Clojure Conj in 2014.
-        \item Diagnosed and resolved a memory leak in Chrome, reducing memory
-          usage by an order of magnitude.
-        \item Finished years long migration from Rails 2 to Rails 3, including
-          porting documentation critical rspec monkey patches.
-        \item Completed complete rewrite of the SPA front end, closing out a
-          years long fork of the front end with a carefully reconstructed git
-          history.
-    \end{itemize}}
+\runsubsection{Pivotal Labs}
+\descript{| Software Engineer}
+\location{2013 - 2015 | Denver, CO}
+\vspace{\topsep}
+Full stack engineer for one of Pivotal Lab's only B2C offerings, Pivotal Tracker.
+\vspace{\topsep}
+\begin{tightemize}
+\item Used generative testing to find reliable reproduction steps for both long running bugs, and new bug reports. This tool and technique were turned into a conference talk at the Clojure Conj in 2014.
+\item Diagnosed and resolved a memory leak in Chrome, reducing memory usage by an order of magnitude.
+\item Finished years long migration from Rails 2 to Rails 3, including porting documentation critical rspec monkey patches.
+\item Completed complete rewrite of the SPA front end, closing out a years long fork of the front end with a carefully reconstructed git history.
+\end{tightemize}
 
-\vspace{0.1in}
+\sectionsep
+\runsubsection{Narrative Science}
+\descript{| Software Engineer}
+\location{2012 - 2013 | Chicago, IL}
+\vspace{\topsep}
+\begin{tightemize}
+\item Sole engineer for company's only public facing product.
+\item Maintained ELT \& ETL pipelines for multiple clients.
+\item Rewrote one-off data processing scripts into a predictable and reusable format.
+\item Led company wide effort to migrate to immutable infrastructure.
+\item Reworked CI/CD infrastructure for faster builds at a lower cost.
+\end{tightemize}
 
-\cventry{2012-2013}{Software Engineer}{\textsc{Narrative Science}}{Chicago}{}{
-    \begin{itemize}
-        \item Sole engineer for company's only client facing product, Quill for Google Analytics.
-        \item Maintained critical ELT pipelines for customer reports.
-        \item Rewrote one-off data processing scripts into a predictable and reusable format.
-        \item Led company wide effort to migrate to immutable infrastructure.
-        \item Reworked CI/CD infrastructure for faster builds at a lower cost.
-    \end{itemize}}
+\sectionsep
+\runsubsection{OnShore Development}
+\descript{| Intern \& Junior Software Engineer}
+\location{2011 - 2012 | Chicago, IL}
+\vspace{\topsep}
+\begin{tightemize}
+\item Maintained primary application written in Common Lisp.
+\item Helped rewrite core algorithms to reduce processing time from minutes to seconds.
+\item Replaced custom Perl deployment scripts with Chef for more reliable deployment.
+\item Created in house i8n library to translate the application for international customers for the first time.
+\end{tightemize}
 
-\vspace{0.1in}
-
-
-\cventry{2011-2012}{Software Engineer}{\textsc{OnShore Development}}{Chicago}{}{
-    \begin{itemize}
-        \item Maintained key web application written in Lisp
-        \item Helped rewrite core algorithms to reduce processing time from minutes to seconds
-        \item Replaced custom Perl deployment scripts with Chef for more reliable deployment
-        \item Created i8n library to translate the application for international customers
-    \end{itemize}}
-
-%----------------------------------------------------------------------------------------
 \section{Education}
+\runsubsection{Loyola University Chicago}
+\descript{| BS in Computer Science}
+\location{2012 | Chicago, IL}
+\sectionsep
 
-\cventry{2008--2012}{Bachelor of Science, Computer Science}{Loyola University Chicago}{}{}{}
-\cventry{2008--2012}{Bachelor of Science, Mathematics}{Loyola University Chicago}{}{}{}
+\runsubsection{Loyola University Chicago}
+\descript{| BS in Mathematics}
+\location{2012 | Chicago, IL}
+\sectionsep
 
-\end{document}
+
+%% \section{Languages}
+%% \begin{minipage}[t]{.6\textwidth}
+%% \subsection{Programming}
+%% \location{Over 5000 lines:}
+%% Java \textbullet{}   Shell \textbullet{} JavaScript \textbullet{} Matlab \textbullet{}
+%% OCaml \textbullet{} Python \textbullet{} Rails \textbullet{} \LaTeX\ \\
+%% \location{Over 1000 lines:}
+%% C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+%% \location{Familiar:}
+%% AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+%% \sectionsep
+%% \end{minipage}
+%% \hfill
+%% \begin{minipage}[t]{.35\textwidth}
+%% \subsection{Spoken \& Written}
+%% \location{Native fluency:} English, Spanish\\
+%% \location{Reading fluency:} Chinese, Japanese\\
+%% \end{minipage}
+
+\end{document}  \documentclass[]{article}
