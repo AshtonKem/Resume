@@ -33,7 +33,7 @@
           '';
           installPhase = ''
             mkdir -p $out
-            cp resume.pdf $out/
+            cp resume.pdf $out/Ashton\ Kemerling\ Resume.pdf
           '';
         };
       };
