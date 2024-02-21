@@ -12,7 +12,9 @@
           inherit (pkgs.texlive) scheme-tetex latex-bin latexmk etoolbox
             xcolor url fancyhdr tools xargs xkeyval microtype bigfoot lipsum fontspec
             geometry hyperref pdftexcmds infwarerr kvoptions epstopdf textpos isodate
-            substr titlesec;
+            substr titlesec
+            # For the cover letter
+            realscripts;
       };
     in rec {
       devShell = pkgs.mkShell {
@@ -28,8 +30,7 @@
             export PATH="${pkgs.lib.makeBinPath buildInputs}";
             mkdir -p .cache/texmf-var
             env TEXMFHOME=.cache TEXMFVAR=.cache/texmf-var \
-              latexmk -interaction=nonstopmode -pdf -lualatex \
-              resume.tex
+              xelatex resume.tex resume.tex
           '';
           installPhase = ''
             mkdir -p $out
