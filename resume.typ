@@ -34,10 +34,17 @@
 )
 
 #resume-item[
+  I was hired to lead the Cloud DVR team at Hulu in March of 2020. Since then I led the team through the pandemic,
+  a merger with Disney, and two re-organizations. I currently lead a internal tooling team responsible for message 
+  schema management, documentation, and data quality tooling.
+]
+
+
+#resume-item[
   Cross Team Impact
 
   - Lead internal tooling team, to coordinate testing and data quality efforts between Data and Client teams.
-  - Technical lead for the Unlimited DVR project, coordinating between six technical teams, design, and product.
+  - Technical head for the Unlimited DVR project, coordinating between six technical teams, design, and product.
   - Managed QA efforts for the Dancing With The Stars and Hulu on Disney+ releases.
   - Founded cross-team best practices committee, reducing duplicated code in new services by 40\%.
 ]
@@ -45,20 +52,20 @@
 #resume-item[
   Key Deliverables
 
-  - Created central schema and data quality hub, to allow for better documentation and testing
-  - Cut DLQ volume by 30\% 
-  - Saved \$36m per year by re-architecting the pause/resume data store.
-  - Cut Hulu Cloud DVR cost by 75% without user impact.
-  - Lead for cross-platform unlimited DVR release, resulting in 50% increase in daily DVR usage.
+  - Created centralized message schema and data quality hub, with tooling to reduce data quality errors.
+  - Cut DLQ volume by 30%.
+  - Saved \$36m per year by re-architecting the pause/resume system.
+  - Cut Hulu Cloud DVR cost by 75% while also launching Unlimited DVR.
   - First team to deliver production features for the new, unified Disney Streaming technical architecture.
-  - Migrated to cloud native architecture a year ahead of company wide mandate.
+  - Migrated to cloud native architecture a year ahead of schedule.
   - First incident free Super Bowl for the DVR in Hulu history.
 ]
 
 #resume-item[
   People Management
 
-  - Increased head count by 40\% in a tight labor market by speeding up the interview loop.
+  - Increased head count by 40\% in a tight labor market.
+  - Maintained the lowest attrition rate in the department through the merger with Disney.
   - Trained three individual contributors to transition to the management track.
   - Mentored three software engineers into senior level positions on the IC track.
 ]
@@ -71,15 +78,21 @@
 )
 
 #resume-item[
+  At Edmunds.com I managed the Lead Collection Team, which managed the forms and backend systems responsible for collecting sales leads for vehicles, storing them,
+  and transmitting them to various partners. In particular we were tasked with unifying and modifying the dozen lead forms that had been created over the years,
+  improving the reliability and performance of the lead API, and also quickly handling requests by OEMs to take advantage of short term business opportunities.
+]
+
+#resume-item[
 Key Deliverables
 
-  - Planned and executed the migration of a dozen lead forms to a single one based on React.
+  - Successfully combined a dozen lead forms to a single one based on React.
   - Reduced P99 API latency from 4s to 250ms, reducing dropped leads by 15%.
-  - Drove over \$5m a year in revenue by rapidly delivering on specific OEM requests for ad campaigns.
-  - First lead form in Edmunds history to survive a region failure.
-  - Developed a unified lead form for nine pages with different product owners.
-  - Reduced lead form iteration time by 90\% with internal self-help tooling for product owners.
+  - Architected the lead collection system to be available during a region outage.
+  - Drove over \$5m a year in revenue by rapidly delivering on specific OEM requirements for ad campaigns.
+  - Reduced lead form iteration time by 90% with internal self-help tooling for product owners.
   - Designed a system for protecting customer data in close collaboration with Data Analytics.
+  - Spearheaded project to migrate client configuration from Salesforce to a purpose built data store.
 ]
 
 #resume-item[
@@ -97,6 +110,13 @@ People Management
   date: "2015 - 2017",
   description: "DRW Trading"
 )
+
+#resume-item[
+  At DRW I was part of a back office team responsible for maintaining critical infrastructure used by various trading desks. Most important of these
+  were the trading instrument reference application, which stored all the financial products the company traded, as well as the trade and position store which 
+  helped display trades and positions for every desk in soft real time. Around these we also maintained a variety of smaller, single purpose applications to assist
+  with tasks such as calculating the interest on a bond between coupon dates.
+]
 
 #resume-item[
   - Part of the team that maintained the company's trade \& position store and the trading instrument reference application.
@@ -154,7 +174,7 @@ People Management
 
 #resume-skill-item(
   "Languages",
-  (strong("Java"), strong("Python"), "Javascript", "Rust"),
+  (strong("Java"), strong("Python"), "Javascript", "React", "Rust"),
 )
 #resume-skill-item("Spoken Languages", (strong("English"),))
 #resume-skill-item(
