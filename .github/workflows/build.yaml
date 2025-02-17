@@ -5,9 +5,15 @@ jobs:
   build_typst_documents:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Roboto
+        run: |
+          wget -O Roboto.zip https://fonts.google.com/download?family=Roboto
+          unzip -d Roboto/ Roboto.zip
+          mv Roboto /usr/share/fonts/
+          fc-cache -fv
       - name: Checkout
         uses: actions/checkout@v3
       - name: Typst
         uses: lvignoli/typst-action@main
         with:
-          source_file: resume.typ
+          source_file: resume().typ
