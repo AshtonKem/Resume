@@ -35,8 +35,9 @@
 
 #resume-item[
   I was hired to lead the Cloud DVR team at Hulu in March of 2020. Since then I led the team through the pandemic,
-  a merger with Disney, and two re-organizations. I currently lead a internal tooling team responsible for message 
-  schema management, documentation, and data quality tooling.
+  a merger with Disney, two re-organizations, and four major releases. I currently lead a internal tooling team responsible for message 
+  schema management, documentation, and data quality tooling. This is a cross functional team with design, front end, back end, and data 
+  engineering responsibilities, with stakeholders at every level in the Disney+ organization.
 ]
 
 
