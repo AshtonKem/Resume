@@ -2,21 +2,25 @@
 
 #show: coverletter.with(
   author: (
-    firstname: "John",
-    lastname: "Smith",
-    email: "js@gmail.com",
-    homepage: "https://example.com",
-    phone: "(+1) 111-111-1111",
-    github: "DeveloperPaul123",
-    linkedin: "John Smith",
-    address: "111 Example St. Apt. 111, Example City, EX 11111",
+    firstname: "Ashton",
+    lastname: "Kemerling",
+    email: "ashton.kemerling@protonmail.com",
+    homepage: "https://www.ashtonkemerling.com",
+    phone: "(+1) 312-582-0313",
+    github: "AshtonKem",
+    linkedin: "ashton-kemerling",
+    address: "617 N. Hillview Drive, Boise ID 83712",
     positions: (
+      "Engineering Manager",
       "Software Engineer",
-      "Full Stack Developer",
     ),
   ),
+  
   profile-picture: none,
-  language: "sp",
+  date: datetime.today().display(),
+  language: "en",
+  show-footer: false,
+  paper-size: "us-letter",
 )
 
 #hiring-entity-info(entity-info: (
