@@ -14,4 +14,4 @@ jobs:
       - name: Typst
         uses: lvignoli/typst-action@main
         with:
-          source_file: main.typ
+          source_file: resume.typ
