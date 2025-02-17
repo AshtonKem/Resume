@@ -44,7 +44,7 @@
 #resume-item[
   Cross Team Impact
 
-  - Lead internal tooling team, to coordinate testing and data quality efforts between Data and Client teams.
+  - Lead internal tooling team tasked with resolving data quality issues in client telemetry.
   - Technical head for the Unlimited DVR project, coordinating between six technical teams, design, and product.
   - Managed QA efforts for the Dancing With The Stars and Hulu on Disney+ releases.
   - Founded cross-team best practices committee, reducing duplicated code in new services by 40\%.
@@ -65,7 +65,7 @@
 #resume-item[
   People Management
 
-  - Increased head count by 40\% in a tight labor market.
+  - Increased head count by 40\% in a competitive labor market.
   - Maintained the lowest attrition rate in the department through the merger with Disney.
   - Trained three individual contributors to transition to the management track.
   - Mentored three software engineers into senior level positions on the IC track.
@@ -180,7 +180,7 @@ People Management
 #resume-skill-item("Spoken Languages", (strong("English"),))
 #resume-skill-item(
   "Tools",
-  (strong("AWS"), "Kafka", "Kubernetes", "Spinnaker"),
+  (strong("AWS"), "Kafka", "Kubernetes", "Helm", "Datadog", "Spinnaker"),
 )
 
 = Education
