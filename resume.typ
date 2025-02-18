@@ -35,7 +35,7 @@
 
 #resume-item[
   I was hired to lead the Cloud DVR team at Hulu in March of 2020. Since then I led the team through the pandemic,
-  a merger with Disney, two re-organizations, and four major releases. I currently lead a internal tooling team responsible for message 
+  a merger with Disney, two re-organizations, and four major releases. I currently lead an internal tooling team responsible for message 
   schema management, documentation, and data quality tooling. This is a cross functional team with design, front end, back end, and data 
   engineering responsibilities, with stakeholders at every level in the Disney+ organization.
 ]
@@ -45,7 +45,7 @@
   Cross Team Impact
 
   - Lead internal tooling team tasked with resolving data quality issues in client telemetry.
-  - Technical head for the Unlimited DVR project, coordinating between six technical teams, design, and product.
+  - Principle technical leader for the Unlimited DVR project, coordinating between six technical teams, design, and product.
   - Managed QA efforts for the Dancing With The Stars and Hulu on Disney+ releases.
   - Founded cross-team best practices committee, reducing duplicated code in new services by 40\%.
 ]
@@ -54,21 +54,22 @@
   Key Deliverables
 
   - Created centralized message schema and data quality hub, with tooling to reduce data quality errors.
-  - Cut DLQ volume by 30%.
-  - Saved \$36m per year by re-architecting the pause/resume system.
-  - Cut Hulu Cloud DVR cost by 75% while also launching Unlimited DVR.
+  - Cut failed message volume to the DLQ by 30%.
+  - Identified architectural issue in the Disney+ pause & resume data store, redesigned to to save \$36m a year.
+  - Cut Hulu Cloud DVR cost by 75% while improving user experience via the Unlimited DVR project.
   - First team to deliver production features for the new, unified Disney Streaming technical architecture.
-  - Migrated to cloud native architecture a year ahead of schedule.
-  - First incident free Super Bowl for the DVR in Hulu history.
+  - Migrated to cloud native architecture a year ahead of planned schedule.
+  - With load testing and early planning, delivered the first incident free Super Bowl in DVR Team history.
 ]
 
 #resume-item[
   People Management
 
-  - Increased head count by 40\% in a competitive labor market.
-  - Maintained the lowest attrition rate in the department through the merger with Disney.
+  - Increased head count by 40\% in a competitive labor market with clear job descriptions and a responsive interview loop.
+  - Maintained the lowest attrition rate in the department through the merger with Disney, Covid, and social disruptions in Los Angeles.
   - Trained three individual contributors to transition to the management track.
   - Mentored three software engineers into senior level positions on the IC track.
+  - Managed a remote team, with members in three states and two countries.
 ]
 
 #resume-entry(
@@ -80,28 +81,29 @@
 
 #resume-item[
   At Edmunds.com I managed the Lead Collection Team, which managed the forms and backend systems responsible for collecting sales leads for vehicles, storing them,
-  and transmitting them to various partners. In particular we were tasked with unifying and modifying the dozen lead forms that had been created over the years,
-  improving the reliability and performance of the lead API, and also quickly handling requests by OEMs to take advantage of short term business opportunities.
+  and transmitting them to internal and external partners. In particular we were tasked with unifying and modifying the dozen lead forms that had been created over the years,
+  improving the reliability and performance of the lead API, and also quickly handling requests by vehicle OEMs to take advantage of short term business opportunities.
 ]
 
 #resume-item[
 Key Deliverables
 
-  - Successfully combined a dozen lead forms to a single one based on React.
+  - Successfully combined a dozen lead forms to a responsive, flexible, and performant form built with React.
   - Reduced P99 API latency from 4s to 250ms, reducing dropped leads by 15%.
-  - Architected the lead collection system to be available during a region outage.
+  - Architected the lead collection system to be available during a AWS region outage.
   - Drove over \$5m a year in revenue by rapidly delivering on specific OEM requirements for ad campaigns.
   - Reduced lead form iteration time by 90% with internal self-help tooling for product owners.
-  - Designed a system for protecting customer data in close collaboration with Data Analytics.
+  - Designed a secure system for protecting customer data while enabling mission critical data analysis.
   - Spearheaded project to migrate client configuration from Salesforce to a purpose built data store.
 ]
 
 #resume-item[
 People Management
 
-  - Redesigned and unified the hiring process for all backend engineers.
-  - Led the hiring committee as the sole non-executive engineering member to completely redesign the hiring process.
-  - Recreated the engineering career ladder for clarity and growth opportunities.
+  - Managed a distributed team with engineers in Europe and the United States.
+  - Created a unified hiring loop for all backend engineers, ensuring consistency across teams, simplifying the hiring process.
+  - Only non-executive on the hiring and promotion committee.
+  - Recreated the engineering career ladder for clearer expectations and a longer engineering only career trajectory.
 ]
 #pagebreak()
 
@@ -123,7 +125,7 @@ People Management
   - Part of the team that maintained the company's trade \& position store and the trading instrument reference application.
   - Completed rewrite of the process to import financial futures for better performance and reliability.
   - Wrote an application analyzing bond interest, providing better accuracy than a Bloomberg terminal.
-  - Maintained system uptime during the record breaking trading days of Brexit and the 2016 election.
+  - Maintained system uptime during the record breaking trading days of Brexit and the 2016 U.S. Presidential election.
   - Wrote services to automate end of day back end processes, saving dozens of hours of labor per week.
   - Improved internal devops tools, adding features to save hours of work per sprint.
   - Administered over 100 dedicated servers and VMs using a mixture of open source and proprietary observability tools.
@@ -165,7 +167,7 @@ People Management
 )
 
 #resume-item[
-  - Particated in rewrite of the core allocator to reduce processing time from minutes to seconds.
+  - Participated in rewrite of the core allocator to reduce processing time from minutes to seconds.
   - Replaced custom Perl deployment scripts with open-source Chef, reducing deployment time by 60\%.
   - Created localization library to translate the application for international customers for the first time.
 ]
@@ -180,7 +182,18 @@ People Management
 #resume-skill-item("Spoken Languages", (strong("English"),))
 #resume-skill-item(
   "Tools",
-  (strong("AWS"), "Kafka", "Kubernetes", "Helm", "Datadog", "Spinnaker"),
+  (strong("AWS"), strong("Kafka"), strong("Kubernetes"), "Github Actions", "Helm", "Datadog", "Spinnaker"),
+)
+#resume-skill-item("Databases", (strong("PostgreSQL"), strong("DynamoDB"), "ScyllaDB", "Redis", "MongoDB"))
+
+= Talks
+
+#resume-entry(
+  title: "Clojure/Conj 2014",
+  title-link: "https://www.youtube.com/watch?v=HXGpBrmR70U&list=PLZdCLR02grLoc322bYirANEso3mmzvCiI&index=19&t=8s",
+  location: "Washington DC", 
+  date: "2014",
+  description: "Generative Integration Tests"
 )
 
 = Education
