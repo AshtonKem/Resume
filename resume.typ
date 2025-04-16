@@ -12,7 +12,7 @@
     address: "617 N. Hillview Drive, Boise ID 83712",
     positions: (
       "Engineering Manager",
-      "Software Engineer",
+      "Technical Architect",
     ),
   ),
   
@@ -24,6 +24,12 @@
   paper-size: "us-letter",
 )
 
+= Profesional Summary
+
+#resume-item[
+  Engineering leader who has driven \$40M+ in annual savings through strategic system redesigns and cloud transformations. Experienced in architecting greenfield distributed systems while also modernizing legacy platforms with minimal disruption. Track record of leading complex cloud migrations that deliver both performance improvements and cost efficiencies across media streaming, e-commerce, and financial services sectors. Skilled at building consensus for technical initiatives across organizational boundaries while developing engineering talent in distributed, multi-national teams.
+]
+
 = Experience
 
 #resume-entry(
@@ -34,42 +40,36 @@
 )
 
 #resume-item[
-  I was hired to lead the Cloud DVR team at Hulu in March of 2020. Since then I led the team through the pandemic,
-  a merger with Disney, two re-organizations, and four major releases. I currently lead an internal tooling team responsible for message 
-  schema management, documentation, and data quality tooling. This is a cross functional team with design, front end, back end, and data 
-  engineering responsibilities, with stakeholders at every level in the Disney+ organization.
+  Directed cross-functional engineering initiatives through complex organizational transformations, including a merger. Established architectural vision across teams while delivering significant technical and business outcomes.
 ]
 
 
 #resume-item[
-  Cross Team Impact
+  Strategic Architecture Leadership:
 
-  - Lead internal tooling team tasked with resolving data quality issues in client telemetry.
-  - Principle technical leader for the Unlimited DVR project, coordinating between six technical teams, design, and product.
-  - Managed QA efforts for the Dancing With The Stars and Hulu on Disney+ releases.
-  - Founded cross-team best practices committee, reducing duplicated code in new services by 40\%.
+  - Led comprehensive architectural redesign of Disney+ pause & resume data store, yielding €33M (\$36M) annual infrastructure savings
+
+  - Reduced Cloud DVR costs by 75% while enhancing user experience through Unlimited DVR project
+  - Spearheaded cloud-native migration, completing transformation one year ahead of corporate timeline
+  - Designed centralized schema management tools improving data quality with 30% reduction in message failures
 ]
 
 #resume-item[
-  Key Deliverables
+  Organizational Leadership & Change Management:
 
-  - Created centralized message schema and data quality hub, with tooling to reduce data quality errors.
-  - Cut failed message volume to the DLQ by 30%.
-  - Identified architectural issue in the Disney+ pause & resume data store, redesigned to to save \$36m a year.
-  - Cut Hulu Cloud DVR cost by 75% while improving user experience via the Unlimited DVR project.
-  - First team to deliver production features for the new, unified Disney Streaming technical architecture.
-  - Migrated to cloud native architecture a year ahead of planned schedule.
-  - With load testing and early planning, delivered the first incident free Super Bowl in DVR Team history.
+  - Successfully navigated teams through pandemic, corporate merger, and two major reorganizations while maintaining productivity
+  - Established cross-team best practices committee, creating standards that reduced duplicated code by 40%
+  - Built and managed geographically distributed teams across multiple time zones, creating inclusive culture
+  - Maintained lowest attrition rate in department during significant corporate restructuring
 ]
 
 #resume-item[
-  People Management
+  Talent Development:
 
-  - Increased head count by 40\% in a competitive labor market with clear job descriptions and a responsive interview loop.
-  - Maintained the lowest attrition rate in the department through the merger with Disney, Covid, and social disruptions in Los Angeles.
-  - Trained three individual contributors to transition to the management track.
-  - Mentored three software engineers into senior level positions on the IC track.
-  - Managed a remote team, with members in three states and two countries.
+  - Mentored three individual contributors to successfully transition into management positions
+  - Developed structured growth plans enabling three engineers to attain senior-level technical positions
+  - Created collaborative technical knowledge-sharing framework adopted by multiple engineering departments
+  - Expanded engineering capacity by 40% in competitive labor market through strategic hiring and onboarding processes
 ]
 
 #resume-entry(
@@ -80,30 +80,25 @@
 )
 
 #resume-item[
-  At Edmunds.com I managed the Lead Collection Team, which managed the forms and backend systems responsible for collecting sales leads for vehicles, storing them,
-  and transmitting them to internal and external partners. In particular we were tasked with unifying and modifying the dozen lead forms that had been created over the years,
-  improving the reliability and performance of the lead API, and also quickly handling requests by vehicle OEMs to take advantage of short term business opportunities.
+  Led architecture and development team responsible for mission-critical lead generation systems processing company critical revenue generating transactions. Orchestrated complete platform redesign while maintaining business continuity.
 ]
 
 #resume-item[
-Key Deliverables
+Technical Architecture Achievements:
 
-  - Successfully combined a dozen lead forms to a responsive, flexible, and performant form built with React.
-  - Reduced P99 API latency from 4s to 250ms, reducing dropped leads by 15%.
-  - Architected the lead collection system to be available during a AWS region outage.
-  - Drove over \$5m a year in revenue by rapidly delivering on specific OEM requirements for ad campaigns.
-  - Reduced lead form iteration time by 90% with internal self-help tooling for product owners.
-  - Designed a secure system for protecting customer data while enabling mission critical data analysis.
-  - Spearheaded project to migrate client configuration from Salesforce to a purpose built data store.
+  - Reduced system latency by 94% (4s to 250ms at P99), directly increasing revenue through 15% decrease in abandoned leads
+  - Designed fault-tolerant, multi-region architecture ensuring business continuity during AWS regional outages
+  - Architected security framework balancing stringent data protection requirements with business analytics needs
+  - Created flexible configuration system enabling rapid design iteration without engineering bottlenecks
 ]
 
 #resume-item[
-People Management
+Business & Organizational Impact:
 
-  - Managed a distributed team with engineers in Europe and the United States.
-  - Created a unified hiring loop for all backend engineers, ensuring consistency across teams, simplifying the hiring process.
-  - Only non-executive on the hiring and promotion committee.
-  - Recreated the engineering career ladder for clearer expectations and a longer engineering only career trajectory.
+  - Generated €4.6M+ (\$5M+) annual incremental revenue through technical architecture enabling rapid OEM campaign deployment
+  - Restructured engineering career framework, creating extended technical growth paths without requiring management transitions
+  - Established unified, objective hiring practices ensuring consistent technical evaluation across all engineering teams
+  - Successfully managed international team across European and US time zones, creating cohesive working model
 ]
 #pagebreak()
 
@@ -115,20 +110,16 @@ People Management
 )
 
 #resume-item[
-  At DRW I was part of a back office team responsible for maintaining critical infrastructure used by various trading desks. Most important of these
-  were the trading instrument reference application, which stored all the financial products the company traded, as well as the trade and position store which 
-  helped display trades and positions for every desk in soft real time. Around these we also maintained a variety of smaller, single purpose applications to assist
-  with tasks such as calculating the interest on a bond between coupon dates.
+  Maintained critical trading infrastructure supporting billions in daily transaction volume. Designed and implemented high-reliability systems with zero-downtime requirements.
 ]
 
 #resume-item[
-  - Part of the team that maintained the company's trade \& position store and the trading instrument reference application.
-  - Completed rewrite of the process to import financial futures for better performance and reliability.
-  - Wrote an application analyzing bond interest, providing better accuracy than a Bloomberg terminal.
-  - Maintained system uptime during the record breaking trading days of Brexit and the 2016 U.S. Presidential election.
-  - Wrote services to automate end of day back end processes, saving dozens of hours of labor per week.
-  - Improved internal devops tools, adding features to save hours of work per sprint.
-  - Administered over 100 dedicated servers and VMs using a mixture of open source and proprietary observability tools.
+  - Maintained 100% system uptime during record-breaking trading events (Brexit, 2016 U.S. Presidential election)
+  - Rewrote financial futures import process for enhanced performance and reliability
+  - Developed bond interest analysis application delivering higher accuracy than Bloomberg terminals
+  - Created services automating end-of-day backend processes, saving dozens of weekly labor hours
+  - Administered 100+ dedicated servers/VMs using mixed open-source and proprietary observability tools
+  - Enhanced internal DevOps tools with time-saving features
 ]
 
 #resume-entry(
@@ -139,11 +130,14 @@ People Management
 )
 
 #resume-item[
-  - Implemented generative testing to find reliable reproduction steps for both long running bugs, and new bug reports.
-  - Diagnosed and resolved a memory leak in Chrome, reducing memory usage by an order of magnitude.
-  - Finished years long migration from Rails 2 to Rails 3, including porting documentation critical rspec patches.
-  - Completed years long rewrite of the SPA front end, including cleaning up the git history.
-  - Introduced React to Pivotal Tracker, to replace increasingly hard to support backbone.js code base.
+  Led technical initiatives for enterprise collaboration platform used by thousands of development teams worldwide. Drove major architectural transformations while ensuring system stability.
+]
+
+#resume-item[
+  - Designed and implemented generative testing framework enabling reliable reproduction of complex system interactions
+  - Led multi-year framework migration (Rails 2 to Rails 3) while maintaining continuous production availability
+  - Engineered memory optimization solution reducing Chrome resource utilization by 90%
+  - Pioneered React integration strategy, creating adoption pathway from legacy Backbone.js architecture
 ]
 
 #resume-entry(
@@ -154,9 +148,9 @@ People Management
 )
 
 #resume-item[
-  - Sole engineer for company's only public facing product, Quill for Google Analytics.
-  - Wrote and monitored ELT \& ETL pipelines for high value customers.
-  - Spearheaded effort to migrate to immutable infrastructure for better reliability and reduced cost.
+  - Sole engineer responsible for company's only public-facing product (Quill for Google Analytics)
+  - Developed and monitored ELT/ETL pipelines for high-value customers
+  - Led initiative to adopt immutable infrastructure for improved reliability and cost reduction
 ]
 
 #resume-entry(
@@ -167,9 +161,9 @@ People Management
 )
 
 #resume-item[
-  - Participated in rewrite of the core allocator to reduce processing time from minutes to seconds.
-  - Replaced custom Perl deployment scripts with open-source Chef, reducing deployment time by 60\%.
-  - Created localization library to translate the application for international customers for the first time.
+  - Contributed to core allocator rewrite, reducing processing time from minutes to seconds
+  - Replaced custom Perl deployment scripts with Chef, cutting deployment time by 60%
+  - Created localization library enabling first-time application translation for international customers
 ]
 
 
